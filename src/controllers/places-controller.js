@@ -14,7 +14,7 @@ export const placesController = {
       });
     },
   },
-  donate: {
+  addPlace: {
     handler: async function (request, h) {
       try {
         const loggedInUser = request.auth.credentials;
