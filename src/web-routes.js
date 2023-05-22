@@ -1,5 +1,5 @@
 import { accountsController } from "./controllers/accounts-controller.js";
-import { PlacesController } from "./controllers/Places-controller.js";
+import { placesController } from "./controllers/places-controller.js";
 
 export const webRoutes = [
   { method: "GET", path: "/", config: accountsController.index },
@@ -9,9 +9,9 @@ export const webRoutes = [
   { method: "POST", path: "/register", config: accountsController.signup },
   { method: "POST", path: "/authenticate", config: accountsController.login },
 
-  { method: "GET", path: "/addPlace", config: PlacesController.index },
-  { method: "POST", path: "/addPlace", config: PlacesController.addPlace },
-  { method: "GET", path: "/report", config: PlacesController.report },
+  { method: "GET", path: "/addPlace", config: placesController.index },
+  { method: "POST", path: "/addPlace", config: placesController.addPlace },
+  { method: "GET", path: "/report", config: placesController.report },
 
   {
     method: "GET",
